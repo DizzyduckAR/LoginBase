@@ -25,6 +25,17 @@ PatrLink = "https://www.patreon.com/AutoMirror"
 WebSiteLink = "https://github.com/DizzyduckAR/LoginBase"
 
 
+#Cloud Function Links
+
+#Login
+#Put Function link "https://us-central1-name-project.cloudfunctions.net/Login"
+LoginApi = 'yourLinkHere'
+
+#Set Nick Name
+#Put Function link "https://us-central1-Name-project.cloudfunctions.net/SetNick"
+SetNickApi = 'yourLinkHere'
+
+
 from Gui.Login import Ui_MainWindow
 try:
     import pyrebase
@@ -194,6 +205,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except:
             self.ui.RecoverStatus.setText("No Email Found")
 
+
 #Login Funcs
     def LoginBTND(self):
         global email 
@@ -247,7 +259,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
                 
                 payload = {'UserPCUID': uid}
-                r = requests.get('https://us-central1-botit-project.cloudfunctions.net/Login', params=payload)
+                
+                r = requests.get(LoginApi, params=payload)
                 data = r.json()
                 
                 
@@ -283,16 +296,73 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # read existing json to memory. you do this to preserve whatever existing data. 
                         
             self.ui.LoginStatus.setText("Logged IN")
-            self.startMainWindow()
-
+            #self.startMainWindow()
+            #Do DO DO
         
         
         
         except:
-            self.ui.LoginStatus.setText("Error DB push")
+            self.ui.LoginStatus.setText("Error DB Check")
             return
 #Register
     def LifeBTND(self):
+        print("Free User")
+        global Nick
+        email = self.ui.UserRegEmail.text()
+        password = self.ui.UserRegPass.text()
+        Nick = self.ui.UserRegNick.text()
+        
+        
+        
+        
+        self.ui.StatusSingup.setText("")
+        # connectivity to the fire base
+        
+        connection: Firebase = pyrebase.initialize_app(config)
+        auth = connection.auth()
+        
+        try:
+        
+            user = auth.create_user_with_email_and_password(email, password)
+            security = auth.send_email_verification(user['idToken'])
+            uid = user["localId"]
+            print(uid)
+            userset = user["idToken"]
+        
+            global xset
+            xset = userset[0:20]
+            connection = pyrebase.initialize_app(config)
+            firebase: Database = connection.database()
+        
+        
+        except:
+        
+            self.ui.StatusSingup.setText("Error User/Pass")
+
+        try:
+                import time
+                import json
+                import requests
+                time.sleep(3)
+                payload = {'UserPCUID': uid,'NickSet': Nick}
+                
+                r = requests.get(SetNickApi, params=payload)
+                data = r.json()
+                print("Nick Set")
+        except:
+                print("Fail push")
+                return
+        
+        self.ui.StatusSingup.setText("New User Added")
+
+        try:
+            self.ui.UsernameTXT.setText(email)
+                # print(Emailtmp)
+        except:
+                print("no Email")
+            
+        self.ui.stackedWidget.setCurrentIndex(0)
+
         print("Free User")
         global Nick
         email = self.ui.UserRegEmail.text()
