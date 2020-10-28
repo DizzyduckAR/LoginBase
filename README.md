@@ -21,7 +21,7 @@ The Local client is Written in pure py and using PyQT for GUI.
 ALL Database Rules Are Locked. both Read and Write.
 any connaction to the DB is by Firebase Cloud Function (provided with this git {JS10})
 
-RulesIMG
+![chrome_eptgEcXPyl](https://user-images.githubusercontent.com/52171360/97439095-6a725580-192e-11eb-9b17-cec1f1db765c.png)
 
 LognBase connaction is splitted into 3 oporations.
 
@@ -29,7 +29,9 @@ LognBase connaction is splitted into 3 oporations.
 2) Firebase Function "On user create" will open up a uid with data on every auth registration.
 3) Client use the uid to talk with the main database with cloud functions requests.
 
-CloudFunc IMG
+![Code_JQbnMFjYpN](https://user-images.githubusercontent.com/52171360/97439210-8ece3200-192e-11eb-84d0-e59b01fddf12.png)
+
+![chrome_WKTIRwKsco](https://user-images.githubusercontent.com/52171360/97439337-b7562c00-192e-11eb-9d88-195a477a4d55.png)
 
 No data is saved or running on the local client.
 User can only access his own uid data.
