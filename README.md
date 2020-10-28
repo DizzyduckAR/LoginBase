@@ -19,13 +19,13 @@ The Local client is Written in pure py and using PyQT for GUI.
 ![python (1)](https://user-images.githubusercontent.com/52171360/97438564-a3f69100-192d-11eb-824a-3f423b17199d.png) ![Qt](https://user-images.githubusercontent.com/52171360/97438892-1bc4bb80-192e-11eb-9937-c60cb9fd78db.png) ![Js](https://user-images.githubusercontent.com/52171360/97438891-1b2c2500-192e-11eb-8ea3-e9b1a45f2289.png) ![Fire](https://user-images.githubusercontent.com/52171360/97438342-57ab5100-192d-11eb-8422-48f5c5cfbbb5.png)
 
 ALL Database Rules Are Locked. both Read and Write.
-any connaction to the DB is by Firebase Cloud Function (provided with this git {JS10})
+any connection to the DB is by Firebase Cloud Function (provided with this git {JS10})
 
 ![chrome_eptgEcXPyl](https://user-images.githubusercontent.com/52171360/97439095-6a725580-192e-11eb-9b17-cec1f1db765c.png)
 
-LognBase connaction is splitted into 3 oporations.
+LoginBase connection is splitted into 3 operations.
 
-1) Google auth hold user emails - passwords - uid  (Admin do not have acccess to passwords. only reset email can reset pass).
+1) Google auth hold user emails - passwords - uid  (Admin do not have access to passwords. only reset email can reset pass).
 2) Firebase Function "On user create" will open up a uid with data on every auth registration.
 3) Client use the uid to talk with the main database with cloud functions requests.
 
@@ -35,7 +35,7 @@ JS10 Cloud Function and uploaded Function in firebase console:
 
 No data is saved or running on the local client.
 User can only access his own uid data.
-All the importent data is prossecced on the cloud functions. user cant access or change the data. local modding of the data will not help since its running on the pre defined firebase bucket.
+All the important data is processed on the cloud functions. user cant access or change the data. local modding of the data will not help since its running on the pre defined firebase bucket.
 
 Auth user and realTime database data:
 ![chrome_8uqfNAJFho](https://user-images.githubusercontent.com/52171360/97439868-672b9980-192f-11eb-85c2-bdbc89f7f67e.png)
@@ -56,17 +56,17 @@ Once setup is done Everything can be controlled from Firebase web Console.
 
 Stuff Needed To start:
 
-  *Firebase account - https://firebase.google.com
+  *Firebase account - https://firebase.google.com
 
-  *Pc with python installed so we can build local env
+  *Pc with python installed so we can build local env
 
-  *App / Data you wanna lock with login system
+  *App / Data you wanna lock with login system
 
 
 
 Install:
 
-Build envierment 
+Build environment 
 Get liberty into the new venv.
 
 ***1)*** Open local text editor and save this lines with .bat
@@ -82,7 +82,7 @@ pause
 ```
 ***2)*** after python have created the libs he need you can copy paste the Source Code into the folder root.
 
-Folder Stracture after Copy
+Folder Structure after Copy
 
 ----New folder to hold project
 --Venv (folder)
@@ -106,7 +106,7 @@ you can view and test your functions local before pushing (DB will be updated we
 ***5)***
 Intargte Firebase Public key each project got one. (This is not account service key or secret key!!!!!!!! WE DO NOT USE THOSE. Never ADD Secret Key or Service Account Key!!!!!!!!!)
 
-Gif how to veiw and copy account public key
+Gif how to view and copy account public key
 
 once you change the api to your public api you can run the app and everything will be hooked.
 you can register.
@@ -126,4 +126,4 @@ Lock your firebase RealTime Database with No Read and Write allowed.
 
 Test:
 Signup user
-DB Write Gif 
+DB Write Gif 
