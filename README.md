@@ -31,9 +31,28 @@ Lock your app (any app) - Protect your data - Add Remote ability to any Client
 Once setup is done Everything can be controlled from Firebase web Console.
 
 Stuff Needed To start:
+
   *Firebase account - https://firebase.google.com
 
   *Pc with python installed so we can build local env
 
   *App / Data you wanna lock with login system
 
+
+
+Install:
+
+Req
+Add this
+Copy this
+Do this...
+
+
+Integrate:
+Copy public api key and replace "API HERE"
+Push the Ready to go Cloud Functions (you can also change the data writing and push)
+Lock your firebase RealTime Database with No Read and Write allowed.
+
+Test:
+Signup user
+DB Write Gif 
