@@ -33,6 +33,8 @@ Once setup is done Everything can be controlled from Firebase web Console.
 Stuff Needed To start:
 
   *Firebase account - https://firebase.google.com
+
   *Pc with python installed so we can build local env
+
   *App / Data you wanna lock with login system
 
