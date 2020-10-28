@@ -7,6 +7,7 @@ ALL Database Rules Are Locked. both Read and Write.
 any connaction to the DB is by Firebase Cloud Function (provided with this git {JS10})
 
 LognBase connaction is splitted into 3 oporations.
+
 1) Google auth hold user emails - passwords - uid  (Admin do not have acccess to passwords. only reset email can reset pass).
 2) Firebase Function "On user create" will open up a uid with data on every auth registration.
 3) Client use the uid to talk with the main database with cloud functions requests.
@@ -33,6 +34,8 @@ Stuff Needed To start:
 Must!!
 (
   Firebase account - https://firebase.google.com
+
   Pc with python installed so we can build local env
+
   App / Data you wanna lock with login system
 )
