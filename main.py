@@ -26,6 +26,7 @@ WebSiteLink = "https://github.com/DizzyduckAR/LoginBase"
 
 
 #Cloud Function Links
+#you get function links only after you pushed Cloud Functions to your project. Fallow Cloud functions Steps!
 
 #Login
 #Put Function link "https://us-central1-name-project.cloudfunctions.net/Login"
