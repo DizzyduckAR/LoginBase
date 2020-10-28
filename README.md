@@ -37,7 +37,9 @@ No data is saved or running on the local client.
 User can only access his own uid data.
 All the importent data is prossecced on the cloud functions. user cant access or change the data. local modding of the data will not help since its running on the pre defined firebase bucket.
 
-Db IMG
+Auth user and realTime database data:
+![chrome_8uqfNAJFho](https://user-images.githubusercontent.com/52171360/97439868-672b9980-192f-11eb-85c2-bdbc89f7f67e.png)
+![chrome_PWwn1eW27g](https://user-images.githubusercontent.com/52171360/97439872-685cc680-192f-11eb-929c-afa2c280f32f.png)
 
 The system Demo Full working User login system.
 User Trails
