@@ -80,7 +80,7 @@ pip install Pyrebase
 pip install --upgrade PyUpdater[all]
 pause
 ```
-after python have created the libs he need you can copy paste the Source Code into the folder root.
+***2)*** after python have created the libs he need you can copy paste the Source Code into the folder root.
 
 Folder Stracture after Copy
 
@@ -90,6 +90,29 @@ Folder Stracture after Copy
 --Gui (folder)
 --main.py
 --client_config.py
+
+
+***3)***
+Open Firebase Account
+Watch video Firebase setup
+
+***4)***
+Set Local firebase CLI (with command prompt so we can push our stuff from local pc)
+Copy the function JS to your new Firebase Function Folder.
+Change / Mod / Edit
+push when done
+you can view and test your functions local before pushing (DB will be updated we emulate only the request)
+
+***5)***
+Intargte Firebase Public key each project got one. (This is not account service key or secret key!!!!!!!! WE DO NOT USE THOSE. Never ADD Secret Key or Service Account Key!!!!!!!!!)
+
+Gif how to veiw and copy account public key
+
+once you change the api to your public api you can run the app and everything will be hooked.
+you can register.
+login.
+recover.
+
 
 Add this
 Copy this
