@@ -85,10 +85,15 @@ pause
 Folder Structure after Copy
 
 ----New folder to hold project
+
 --Venv (folder)
+
 --resources (folder)
+
 --Gui (folder)
+
 --main.py
+
 --client_config.py
 
 
