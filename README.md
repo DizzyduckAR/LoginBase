@@ -1,10 +1,19 @@
 Login Base
 
+GUI welcome IMG
+GUI Register IMG
+Gui Reset IMG
+
+
 LoginBase is a "Serverless" User Login system with Online Database (Google FireBase)
 The Local client is Written in pure py and using PyQT for GUI.
 
+PyIcon QTIcon JS10Icon FirebaseICON
+
 ALL Database Rules Are Locked. both Read and Write.
 any connaction to the DB is by Firebase Cloud Function (provided with this git {JS10})
+
+RulesIMG
 
 LognBase connaction is splitted into 3 oporations.
 
@@ -12,10 +21,13 @@ LognBase connaction is splitted into 3 oporations.
 2) Firebase Function "On user create" will open up a uid with data on every auth registration.
 3) Client use the uid to talk with the main database with cloud functions requests.
 
+CloudFunc IMG
+
 No data is saved or running on the local client.
 User can only access his own uid data.
 All the importent data is prossecced on the cloud functions. user cant access or change the data. local modding of the data will not help since its running on the pre defined firebase bucket.
 
+Db IMG
 
 The system Demo Full working User login system.
 User Trails
