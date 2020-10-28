@@ -29,8 +29,8 @@ LognBase connaction is splitted into 3 oporations.
 2) Firebase Function "On user create" will open up a uid with data on every auth registration.
 3) Client use the uid to talk with the main database with cloud functions requests.
 
+JS10 Cloud Function and uploaded Function in firebase console:
 ![Code_JQbnMFjYpN](https://user-images.githubusercontent.com/52171360/97439210-8ece3200-192e-11eb-84d0-e59b01fddf12.png)
-
 ![chrome_WKTIRwKsco](https://user-images.githubusercontent.com/52171360/97439337-b7562c00-192e-11eb-9d88-195a477a4d55.png)
 
 No data is saved or running on the local client.
