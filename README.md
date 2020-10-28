@@ -69,9 +69,7 @@ Install:
 Build envierment 
 Get liberty into the new venv.
 
-***1)***
-
-Open local text editor and save this lines with .bat
+***1)*** Open local text editor and save this lines with .bat
 then run to grab everything into "venv" on the local folder you are running.
 ```
 python3 -m venv venv
@@ -82,8 +80,16 @@ pip install Pyrebase
 pip install --upgrade PyUpdater[all]
 pause
 ```
+after python have created the libs he need you can copy paste the Source Code into the folder root.
 
+Folder Stracture after Copy
 
+----New folder to hold project
+--Venv (folder)
+--resources (folder)
+--Gui (folder)
+--main.py
+--client_config.py
 
 Add this
 Copy this
