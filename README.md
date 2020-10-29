@@ -61,7 +61,8 @@ Stuff Needed To start:
   *Pc with python installed so we can build local env
 
   *App / Data you wanna lock with login system
-
+  
+  * Microsoft VS Code https://code.visualstudio.com/  (we used free. not sure they got payment options)
 
 
 Install:
