@@ -6,7 +6,7 @@ use django and backend kick google to the bin.
 
 thank you google for blocking parler and showing all of the internet what an uncontrolled monster you become.
 
-we gonna leave the data as is but again we strongly recommend you to AVOID USE ANY GOOGLE SERVICES.
+we gonna leave the data as is but again we strongly recommend you to **AVOID USE ANY GOOGLE SERVICES.
 you dont need them and it just gonna cost you money while they keep pushing politics into our internet.
 
 
